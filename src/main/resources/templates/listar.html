@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Listar</title>
+</head>
+<body>
+
+<h1>Usuários cadastrados</h1>
+
+<table>
+    <tr>
+        <td>Nome</td>
+        <td>Email</td>
+    </tr>
+    <tr th:each="usuario: ${usuarioList}" >
+        <td th:text="${usuario.nome}">nome</td>
+        <td th:text="${usuario.email}">email</td>
+    </tr>
+</table>
+
+
+</body>
+</html>
